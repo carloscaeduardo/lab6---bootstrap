@@ -11,25 +11,35 @@
 <body>
 
     <div class="content m-3">
-        <div class="menu-block m-3 d-block d-sm-block d-md-none">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" >Menu</button>
-            
-            <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"  aria-labelledby="offcanvasExampleLabel" >
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="	d-block d-sm-none">
+            <div class="menu-block m-3">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" >Menu</button>
+                
+                <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"  aria-labelledby="offcanvasExampleLabel" >
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="offcanvas-body">
-                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
-                      </div>
+            </div>
+        </div>
+        <div class="menu-block m-3 d-none d-sm-block">
+            <div class="offcanvas-body">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Brazil</button>
+                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
                 </div>
-
-
-
             </div>
         </div>
         
@@ -60,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">2
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">2
                     <div class="row">
                         <div class="col-6  bg-dark text-white border border-light">
                             Population
@@ -81,53 +91,53 @@
                             Population
                         </div>
                     </div>
-                  </div>
-                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">3
-                    <div class="row">
-                        <div class="col-6  bg-dark text-white border border-light">
-                            Population
-                        </div>
-                        <div class="col-6 bg-secondary text-white border border-light">
-                            Population
-                        </div>
-                        <div class="col-6 bg-dark text-white border border-light">
-                            Population
-                        </div>
-                        <div class="col-6 bg-secondary text-white border border-light">
-                            Population
-                        </div>
-                        <div class="col-6 bg-dark text-white border border-light">
-                            Population
-                        </div>
-                        <div class="col-6 bg-secondary text-white border border-light">
-                            Population
-                        </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">4
-                    <div class="row">
-                        <div class="col-6  bg-dark text-white border border-light">
-                            Population
-                        </div>
-                        <div class="col-6 bg-secondary text-white border border-light">
-                            Population
-                        </div>
-                        <div class="col-6 bg-dark text-white border border-light">
-                            Population
-                        </div>
-                        <div class="col-6 bg-secondary text-white border border-light">
-                            Population
-                        </div>
-                        <div class="col-6 bg-dark text-white border border-light">
-                            Population
-                        </div>
-                        <div class="col-6 bg-secondary text-white border border-light">
-                            Population
-                        </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">3
+                    <div class="row">
+                        <div class="col-6  bg-dark text-white border border-light">
+                            Population
+                        </div>
+                        <div class="col-6 bg-secondary text-white border border-light">
+                            Population
+                        </div>
+                        <div class="col-6 bg-dark text-white border border-light">
+                            Population
+                        </div>
+                        <div class="col-6 bg-secondary text-white border border-light">
+                            Population
+                        </div>
+                        <div class="col-6 bg-dark text-white border border-light">
+                            Population
+                        </div>
+                        <div class="col-6 bg-secondary text-white border border-light">
+                            Population
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">4
+                    <div class="row">
+                        <div class="col-6  bg-dark text-white border border-light">
+                            Population
+                        </div>
+                        <div class="col-6 bg-secondary text-white border border-light">
+                            Population
+                        </div>
+                        <div class="col-6 bg-dark text-white border border-light">
+                            Population
+                        </div>
+                        <div class="col-6 bg-secondary text-white border border-light">
+                            Population
+                        </div>
+                        <div class="col-6 bg-dark text-white border border-light">
+                            Population
+                        </div>
+                        <div class="col-6 bg-secondary text-white border border-light">
+                            Population
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
             
         </div>
         
